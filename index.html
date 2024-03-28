@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Add - Product</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+
+  <body>
+    <div class="custom-container">
+      <h2>Add Product Form</h2>
+      <!-- Form -->
+      <form class="productForm">
+
+        <!-- product id -->
+        <div class="formItem">
+          <label for="productId">Product ID</label>
+          <input
+            id="productId"
+            placeholder="Input your product ID"
+            type="text"
+          />
+        </div>
+
+        <!-- product name -->
+        <div class="formItem">
+          <label for="prodName">Product Name</label>
+          <input
+            id="prodName"
+            placeholder="Input your product name"
+            type="text"
+          />
+        </div>
+
+        <!-- description -->
+        <div class="formItem">
+          <label for="description">Description</label>
+          <textarea
+            id="description"
+            rows="5"
+            placeholder="input product description"
+          ></textarea>
+        </div>
+
+        <!-- original price -->
+        <div class="formItem">
+          <label for="originalPrice">Original Price</label>
+          <input id="originalPrice" type="number" />
+        </div>
+
+        <!-- reduced price -->
+        <div class="formItem">
+          <label for="reducedPrice">Reduce Price</label>
+          <input id="reducedPrice" type="number" />
+        </div>
+
+        <!-- product media -->
+        <div class="formItem">
+          <label for="prodMedia">Media</label>
+          <input id="prodMedia" type="text" placeholder="input product image" />
+        </div>
+
+        <div class="submitBtn">
+          <button onclick="submitForm(event)" type="submit" id="submit">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- product list -->
+    <div id="phone">
+      <div class="container">
+        <div id="phoneList" class="row">
+
+        </div>
+      </div>
+    </div>
+
+    <!-- dom bằng id thay đổi font size thành 24px chữ trắng background đen -->
+    <!-- <div id="baiTap1" class="domClass">
+        hello world
+    </div> -->
+
+    <!-- dom bằng query thay đổi nội dung thành "Đã Hoàn Thành Bài Tập 2." -->
+    <!-- <div id="baiTap2" class="domClass">
+        Lorem ipsum dolor sit amet.
+    </div> -->
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JS -->
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.custom-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 70px 0;
+  text-align: center;
+}
+.custom-container h2 {
+  margin-bottom: 30px;
+}
+.custom-container .productForm {
+  border: 1px solid gray;
+  padding: 20px;
+  box-shadow: 1px 1px 1px gainsboro;
+  border-radius: 10px;
+}
+.custom-container .productForm .formItem {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+.custom-container .productForm .formItem label {
+  width: 30%;
+  text-align: right;
+}
+.custom-container .productForm .formItem label::after {
+  content: ":";
+}
+.custom-container .productForm .formItem input,
+.custom-container .productForm .formItem textarea {
+  width: 70%;
+  border: 1px solid orange;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.custom-container .productForm .formItem input:focus,
+.custom-container .productForm .formItem textarea:focus {
+  outline: none;
+  border: 2px solid orangered;
+}
+.custom-container .productForm .submitBtn {
+  text-align: center;
+  margin-top: 20px;
+}
+.custom-container .productForm .submitBtn button {
+  padding: 5px 20px;
+  background-color: orange;
+  color: white;
+  border-color: transparent;
+  transition: all 0.5s;
+}
+.custom-container .productForm .submitBtn button:hover {
+  background-color: orangered;
+}
+
+#phone .productCard {
+  border: 1px solid gainsboro;
+  padding: 20px;
+}/*# sourceMappingURL=index.css.map */
